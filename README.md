@@ -148,6 +148,4 @@ These options may also be passed directly into the `mo-dev` command (e.g. `mo-de
 
 ---
 
-`mo-dev` is early in development. Please feel free to report a bug, ask a question, or request a feature on the project's [GitHub issues](https://github.com/dfinity/motoko-dev-server/issues) page. 
-
-Contributions are welcome! Please check out the [contributor guidelines](https://github.com/dfinity/motoko-dev-server/blob/main/.github/CONTRIBUTING.md) for more information.
+Please feel free to report a bug, ask a question, or request a feature on the project's [GitHub issues](https://github.com/dfinity/motoko-dev-server/issues) page. 
