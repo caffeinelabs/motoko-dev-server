@@ -1,4 +1,4 @@
-actor class Main() {
+persistent actor class Main() {
     public func main() : async Nat {
         123;
     };

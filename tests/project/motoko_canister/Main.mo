@@ -1,6 +1,6 @@
 import Lib "lib/Echo";
 
-actor {
+persistent actor {
     public func main() : async Nat {
         Lib.echo(123);
     };

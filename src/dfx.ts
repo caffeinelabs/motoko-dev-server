@@ -42,8 +42,10 @@ export async function loadDfxSources(
         reject: false,
     });
     if (packtoolResult.failed) {
+        const errorDetails =
+            packtoolResult.stderr || packtoolResult.stdout || 'Unknown error';
         throw new Error(
-            `Error while running 'defaults.build.packtool' command from dfx.json file in ${directory}`,
+            `Error while running 'defaults.build.packtool' command from dfx.json file in ${directory}\n${errorDetails}`,
         );
     }
     return packtoolResult.stdout.replace(/\n/g, ' ');
