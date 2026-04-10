@@ -19,15 +19,15 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     # - run: git clone https://github.com/dfinity/motoko.rs ../motoko.rs --depth 1
     - name: Install dfx
-      uses: dfinity/setup-dfx@main
+      uses: dfinity/setup-dfx@e50c04f104ee4285ec010f10609483cf41e4d365 # main
     - run: dfx cache install
     - run: npm ci
     - run: npm run build --if-present
